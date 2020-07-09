@@ -1,0 +1,23 @@
+header .nav{
+  @include my_display_flex;
+  width: $width_primary;
+  height: 100px;
+  border-bottom: 1px solid $color_font;
+  margin: auto;
+
+  .logo{
+    width: 150px;
+  }
+  .nav_menu li{
+    padding-right: 20px;
+
+  }
+  .nav_menu a {
+    color: $color_font;
+    font-size: $size_font;
+    font-weight: 500;
+  }
+  .nav_menu .btn {
+
+  }
+}
