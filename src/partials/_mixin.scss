@@ -3,3 +3,16 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin my_btn {
+  border: $color_secondary;
+  padding: 15px;
+  border-radius: 10px;
+  background: #5b70aa;
+}
+@mixin my_float {
+  float:left;
+  width: 50%;
+}
+@mixin my_padding_section {
+  padding: 40px 0;
+}

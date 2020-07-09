@@ -1,9 +1,10 @@
 header .nav{
   @include my_display_flex;
   width: $width_primary;
-  height: 100px;
+  height: 90px;
   border-bottom: 1px solid $color_font;
   margin: auto;
+
 
   .logo{
     width: 150px;
@@ -17,7 +18,16 @@ header .nav{
     font-size: $size_font;
     font-weight: 500;
   }
-  .nav_menu .btn {
-
+  .btn {
+    @include my_btn;
   }
+  .btn img {
+    width: 28px;
+    vertical-align: middle;
+  }
+  .btn a {
+    vertical-align: middle;
+    color: $color_secondary;
+  }
+
 }

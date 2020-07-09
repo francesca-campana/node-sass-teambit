@@ -31,7 +31,7 @@ header .nav {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  height: 100px;
+  height: 90px;
   border-bottom: 1px solid #58402c;
   margin: auto;
 }
@@ -48,5 +48,57 @@ header .nav .nav_menu a {
   color: #58402c;
   font-size: 18px;
   font-weight: 500;
+}
+
+header .nav .btn {
+  border: #2c4791;
+  padding: 15px;
+  border-radius: 10px;
+  background: #5b70aa;
+}
+
+header .nav .btn img {
+  width: 28px;
+  vertical-align: middle;
+}
+
+header .nav .btn a {
+  vertical-align: middle;
+  color: #2c4791;
+}
+
+main .jumbotron {
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+  color: #58402c;
+  padding: 40px 0;
+}
+
+main .jumbotron .teaser {
+  float: left;
+  width: 50%;
+}
+
+main .jumbotron .teaser h2 {
+  font-size: 58px;
+  line-height: 1.8;
+}
+
+main .jumbotron .teaser p {
+  font-size: 27px;
+  line-height: 1.5;
+}
+
+main .jumbotron .teaser button {
+  border: #2c4791;
+  padding: 15px;
+  border-radius: 10px;
+  background: #5b70aa;
+}
+
+main .jumbotron .illo {
+  float: left;
+  width: 50%;
 }
 
