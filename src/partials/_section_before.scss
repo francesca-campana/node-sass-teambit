@@ -1,0 +1,40 @@
+section.before {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    @include my_display_flex;
+    h2 {
+      color: $color_font;
+      padding-bottom: 20px;
+      font-size: 25px;
+    }
+  }
+  .processes {
+    width:100%;
+    @include my_display_flex;
+
+
+    & article {
+      text-align: center;
+      padding: 20px;
+      flex-basis: calc(#{100% / 3});
+
+      $i: 6;
+      @while $i > 3 {
+        img.item-#{$i} {
+          width: $width * $i;
+        }
+        $i: $i - 1;
+      }
+      p {
+        color: $color_font;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+
+    }
+  }
+
+}
