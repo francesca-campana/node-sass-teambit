@@ -23,6 +23,7 @@ li {
 
 main {
   padding-top: 90px;
+  width: 80%;
 }
 
 .container {
@@ -36,13 +37,13 @@ main {
 header {
   position: fixed;
   background-color: white;
+  width: 80%;
 }
 
 header .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
   height: 90px;
   border-bottom: 1px solid #58402c;
 }
@@ -80,7 +81,6 @@ header .btn a {
 
 .jumbotron {
   height: 500px;
-  width: 1200px;
   margin: auto;
   color: #58402c;
   padding: 40px 0;
@@ -101,11 +101,17 @@ header .btn a {
   line-height: 1.5;
 }
 
-.jumbotron .teaser button {
+.jumbotron .teaser .btn {
   border: #2c4791;
   padding: 15px;
   border-radius: 10px;
   background: #5b70aa;
+  display: inline-block;
+}
+
+.jumbotron .teaser .btn img {
+  width: 28px;
+  vertical-align: middle;
 }
 
 .jumbotron .illo {

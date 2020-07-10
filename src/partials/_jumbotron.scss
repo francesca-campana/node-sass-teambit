@@ -1,6 +1,5 @@
 .jumbotron {
   height: 500px;
-  width: $width_primary;
   margin: auto;
   color: $color_font;
   @include my_padding_section;
@@ -8,18 +7,25 @@
 
   .teaser {
     @include my_float;
-    & h2 {
-      font-size: 58px;
-      line-height: 1.8;
+      & h2 {
+        font-size: 58px;
+        line-height: 1.8;
+      }
+      & p {
+        font-size: 27px;
+        line-height: 1.5;
+      }
+      & .btn {
+        @include my_btn;
+        display: inline-block;
+        img {
+          width: 28px;
+          vertical-align: middle;
+        }
+      }
+
     }
-    & p {
-      font-size: 27px;
-      line-height: 1.5;
-    }
-    & button {
-      @include my_btn;
-    }
-  }
+
   .illo {
     @include my_float;
   }
