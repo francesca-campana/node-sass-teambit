@@ -83,29 +83,32 @@ header .btn a {
 }
 
 .jumbotron {
-  height: 500px;
-  margin: auto;
   color: #58402c;
-  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron .container {
+  padding: 80px 0;
   width: 80%;
 }
 
-.jumbotron .teaser {
+.jumbotron .container .teaser {
   float: left;
   width: 50%;
 }
 
-.jumbotron .teaser h2 {
+.jumbotron .container .teaser h2 {
   font-size: 58px;
   line-height: 1.8;
 }
 
-.jumbotron .teaser p {
+.jumbotron .container .teaser p {
   font-size: 27px;
   line-height: 1.5;
 }
 
-.jumbotron .teaser .btn {
+.jumbotron .container .teaser .btn {
   border: #2c4791;
   padding: 15px;
   border-radius: 10px;
@@ -113,12 +116,12 @@ header .btn a {
   display: inline-block;
 }
 
-.jumbotron .teaser .btn img {
+.jumbotron .container .teaser .btn img {
   width: 28px;
   vertical-align: middle;
 }
 
-.jumbotron .illo {
+.jumbotron .container .illo {
   float: left;
   width: 50%;
 }
@@ -130,7 +133,7 @@ main .bg-primary {
 }
 
 main .bg-primary .container {
-  padding: 40px 0;
+  padding: 80px 0;
   width: 80%;
   display: flex;
   justify-content: center;

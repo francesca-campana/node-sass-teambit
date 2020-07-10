@@ -1,32 +1,32 @@
 .jumbotron {
-  height: 500px;
-  margin: auto;
   color: $color_font;
-  @include my_section_size;
+  @include my_display_flex;
 
-
-  .teaser {
-    @include my_float;
-      & h2 {
-        font-size: 58px;
-        line-height: 1.8;
-      }
-      & p {
-        font-size: 27px;
-        line-height: 1.5;
-      }
-      & .btn {
-        @include my_btn;
-        display: inline-block;
-        img {
-          width: 28px;
-          vertical-align: middle;
+  .container {
+    @include my_section_size;
+    .teaser {
+      @include my_float;
+        & h2 {
+          font-size: 58px;
+          line-height: 1.8;
         }
+        & p {
+          font-size: 27px;
+          line-height: 1.5;
+        }
+        & .btn {
+          @include my_btn;
+          display: inline-block;
+          img {
+            width: 28px;
+            vertical-align: middle;
+          }
+        }
+
       }
 
+    .illo {
+      @include my_float;
     }
-
-  .illo {
-    @include my_float;
   }
 }
