@@ -1,0 +1,8 @@
+main .bg-primary {
+  background-color: $bg_color_primary;
+  @include my_display_flex;
+  & .container {
+    @include my_section_size;
+    @include my_display_flex;
+  }
+}

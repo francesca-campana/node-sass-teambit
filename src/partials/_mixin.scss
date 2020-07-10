@@ -1,7 +1,13 @@
-@mixin my_display_flex {
+@mixin my_nav_display_flex {
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+
+}
+@mixin my_display_flex {
+  display: flex;
+  justify-content: center;
+
 }
 @mixin my_btn {
   border: $color_secondary;
@@ -13,6 +19,7 @@
   float:left;
   width: 50%;
 }
-@mixin my_padding_section {
+@mixin my_section_size {
   padding: 40px 0;
+  width: 80%;
 }

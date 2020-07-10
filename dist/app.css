@@ -23,21 +23,24 @@ li {
 
 main {
   padding-top: 90px;
-  width: 80%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
+  width: 80%;
+  height: 100%;
 }
 
 header {
   position: fixed;
   background-color: white;
-  width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 header .nav {
@@ -84,6 +87,7 @@ header .btn a {
   margin: auto;
   color: #58402c;
   padding: 40px 0;
+  width: 80%;
 }
 
 .jumbotron .teaser {
@@ -117,5 +121,18 @@ header .btn a {
 .jumbotron .illo {
   float: left;
   width: 50%;
+}
+
+main .bg-primary {
+  background-color: #fee7d2;
+  display: flex;
+  justify-content: center;
+}
+
+main .bg-primary .container {
+  padding: 40px 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 

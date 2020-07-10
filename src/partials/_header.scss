@@ -1,12 +1,14 @@
 header {
   position: fixed;
   background-color: $color_white;
-  width: $width_primary;
+  width: 100%;
+  @include my_display_flex;
+
 
 
   .nav{
-  @include my_display_flex;
-  align-items: center;
+  @include my_nav_display_flex;
+
 
   height: 90px;
   border-bottom: 1px solid $color_font;
