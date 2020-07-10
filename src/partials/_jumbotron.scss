@@ -1,9 +1,10 @@
-main .jumbotron {
+.jumbotron {
   height: 500px;
   width: $width_primary;
   margin: auto;
   color: $color_font;
   @include my_padding_section;
+
 
   .teaser {
     @include my_float;
