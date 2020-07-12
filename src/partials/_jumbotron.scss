@@ -6,13 +6,10 @@
     @include my_section_size;
     .teaser {
       @include my_float;
-        & h2 {
-          font-size: 58px;
-          line-height: 1.8;
-        }
         & p {
           font-size: 27px;
           line-height: 1.5;
+          padding-bottom: 40px;
         }
         & .btn {
           @include my_btn;
@@ -20,6 +17,10 @@
           img {
             width: 28px;
             vertical-align: middle;
+          }
+          a {
+            color: white;
+            font-weight: bold;
           }
         }
 

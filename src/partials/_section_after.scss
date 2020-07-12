@@ -1,4 +1,4 @@
-.bg-primary section.before {
+.bg-primary section.after {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
     flex-wrap: wrap;
 
 
+
     & article {
       text-align: center;
       padding: 20px;
@@ -28,11 +29,11 @@
       margin-top: 40px;
 
       $i: 6;
-      @while $i > 3 {
+      @while $i > 0 {
         img.item-#{$i} {
           width: $width * $i;
         }
-        $i: $i - 1;
+        $i: $i - 2;
       }
 
       p {

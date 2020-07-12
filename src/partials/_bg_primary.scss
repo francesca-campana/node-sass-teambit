@@ -1,8 +1,16 @@
-main .bg-primary {
+.bg-primary {
   background-color: $bg_color_primary;
   @include my_display_flex;
   & .container {
     @include my_section_size;
-    @include my_display_flex;
+
+    & .divide {
+      @include my_display_flex;
+      margin: 130px 0;
+      background-color: $color_font;
+      height: 1px;
+
+    }
   }
+
 }

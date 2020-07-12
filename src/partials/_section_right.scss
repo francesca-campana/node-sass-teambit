@@ -1,0 +1,29 @@
+.bg-white section.right {
+  display: flex;
+  @include my_padding_bottom;
+  float: right;
+  clear: both;
+  flex-direction: row-reverse;
+  & .diapo {
+    width: 63%;
+  }
+  & .teaser {
+    width: 27%;
+
+    & .title h3{
+      font-size: 38px;
+      @include font_color;
+      line-height: 2;
+      @include my_padding_bottom;
+    }
+    & .subtitle p{
+      font-size: 25px;
+      @include font_color;
+      line-height: 2;
+      @include my_padding_bottom;
+
+    }
+  }
+
+
+}

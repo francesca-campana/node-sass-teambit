@@ -1,0 +1,5 @@
+.mission {
+  background-color: $bg_color_primary;
+  width: 100%;
+  @include my_section_size;
+}

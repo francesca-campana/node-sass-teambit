@@ -1,0 +1,5 @@
+.bg-white {
+  background-color: $color_white;
+  width: 100%;
+  @include my_section_size;
+}
