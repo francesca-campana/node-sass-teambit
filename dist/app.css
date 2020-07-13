@@ -250,15 +250,20 @@ header .btn a {
   padding-top: 20px;
 }
 
-.bg-white {
+main .bg-white {
   background-color: white;
   width: 100%;
+  padding: 80px 0;
+}
+
+main .bg-white .wrap {
   padding: 80px 0;
 }
 
 .bg-white section.left {
   display: flex;
   padding-bottom: 40px;
+  background-color: white;
   float: left;
   clear: both;
 }
@@ -288,6 +293,7 @@ header .btn a {
 .bg-white section.right {
   display: flex;
   padding-bottom: 40px;
+  background-color: white;
   float: right;
   clear: both;
   flex-direction: row-reverse;

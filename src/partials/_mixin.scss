@@ -32,3 +32,6 @@
 @mixin my_padding_bottom {
   padding-bottom: 40px;
 }
+@mixin my_background_white {
+  background-color: $color_white;
+}

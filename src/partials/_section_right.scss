@@ -1,6 +1,7 @@
 .bg-white section.right {
   display: flex;
   @include my_padding_bottom;
+  @include my_background_white;
   float: right;
   clear: both;
   flex-direction: row-reverse;
