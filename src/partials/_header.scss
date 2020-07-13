@@ -3,42 +3,36 @@ header {
   background-color: $color_white;
   width: 100%;
   @include my_display_flex;
-
-
+  z-index: 10;
 
   .nav{
-  @include my_nav_display_flex;
+    @include my_nav_display_flex;
+    height: 90px;
+    border-bottom: 1px solid $color_font;
 
+    & .logo{
+      width: 150px;
+    }
+    & .nav_menu li{
+      padding-right: 20px;
 
-  height: 90px;
-  border-bottom: 1px solid $color_font;
-  // margin: auto;
+      &  a {
+        color: $color_font;
+        font-size: $size_font;
+        font-weight: 500;
+      }
+    }
+    & li.btn {
+      @include my_btn;
+      
+      & img {
+        width: 28px;
+        vertical-align: middle;
+      }
+      & a {
+        vertical-align: middle;
+        color: $color_secondary;
+      }
+    }
   }
-
-
-
-  .logo{
-    width: 150px;
-  }
-  .nav_menu li{
-    padding-right: 20px;
-
-  }
-  .nav_menu a {
-    color: $color_font;
-    font-size: $size_font;
-    font-weight: 500;
-  }
-  .btn {
-    @include my_btn;
-  }
-  .btn img {
-    width: 28px;
-    vertical-align: middle;
-  }
-  .btn a {
-    vertical-align: middle;
-    color: $color_secondary;
-  }
-
 }

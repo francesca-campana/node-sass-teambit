@@ -2,7 +2,7 @@
   color: $color_font;
   @include my_display_flex;
 
-  .container {
+  & .container {
     @include my_section_size;
     .teaser {
       @include my_float;
@@ -11,18 +11,7 @@
           line-height: 1.5;
           padding-bottom: 40px;
         }
-        & .btn {
-          @include my_btn;
-          display: inline-block;
-          img {
-            width: 28px;
-            vertical-align: middle;
-          }
-          a {
-            color: white;
-            font-weight: bold;
-          }
-        }
+        
 
       }
 

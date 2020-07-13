@@ -30,6 +30,12 @@ h2 {
   line-height: 1.8;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -47,12 +53,30 @@ h2 {
   padding-bottom: 40px;
 }
 
+.btn {
+  border: #2c4791;
+  padding: 15px;
+  border-radius: 10px;
+  background: #5b70aa;
+}
+
+.btn img {
+  width: 28px;
+  vertical-align: middle;
+}
+
+.btn a {
+  color: white;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   background-color: white;
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 header .nav {
@@ -63,33 +87,33 @@ header .nav {
   border-bottom: 1px solid #58402c;
 }
 
-header .logo {
+header .nav .logo {
   width: 150px;
 }
 
-header .nav_menu li {
+header .nav .nav_menu li {
   padding-right: 20px;
 }
 
-header .nav_menu a {
+header .nav .nav_menu li a {
   color: #58402c;
   font-size: 18px;
   font-weight: 500;
 }
 
-header .btn {
+header .nav li.btn {
   border: #2c4791;
   padding: 15px;
   border-radius: 10px;
   background: #5b70aa;
 }
 
-header .btn img {
+header .nav li.btn img {
   width: 28px;
   vertical-align: middle;
 }
 
-header .btn a {
+header .nav li.btn a {
   vertical-align: middle;
   color: #2c4791;
 }
@@ -113,24 +137,6 @@ header .btn a {
   font-size: 27px;
   line-height: 1.5;
   padding-bottom: 40px;
-}
-
-.jumbotron .container .teaser .btn {
-  border: #2c4791;
-  padding: 15px;
-  border-radius: 10px;
-  background: #5b70aa;
-  display: inline-block;
-}
-
-.jumbotron .container .teaser .btn img {
-  width: 28px;
-  vertical-align: middle;
-}
-
-.jumbotron .container .teaser .btn a {
-  color: white;
-  font-weight: bold;
 }
 
 .jumbotron .container .illo {
@@ -325,5 +331,73 @@ main .bg-white .wrap {
   background-color: #fee7d2;
   width: 100%;
   padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mission .container .title {
+  margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 53%;
+  color: #58402c;
+}
+
+.mission .container .ceo {
+  margin: auto;
+  width: 688px;
+  background-color: white;
+  display: flex;
+  border-radius: 18px;
+  border: 2px solid #2c4791;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.mission .container .ceo i {
+  font-size: 36px;
+  color: #58402c;
+  position: absolute;
+  top: -18px;
+  left: 0;
+}
+
+.mission .container .ceo p {
+  line-height: 1.2;
+  color: #58402c;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.mission .container .ceo .info {
+  display: flex;
+  align-items: center;
+}
+
+.mission .container .ceo .info .photo-ceo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission .container .ceo .info .photo-ceo img {
+  padding-right: 20px;
+}
+
+.mission .container .ceo .info .contact p {
+  font-size: 18px;
+  padding: 0;
+}
+
+.mission .container .ceo .info .contact p:first-child {
+  color: #2c4791;
+}
+
+.mission .container .btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

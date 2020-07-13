@@ -1,0 +1,66 @@
+.mission {
+  background-color: $bg_color_primary;
+  width: 100%;
+  @include my_section_size;
+  @include my_display_flex;
+  & .container {
+
+    & .title {
+      margin: auto;
+      @include my_padding_bottom;
+      text-align: center;
+      width: 53%;
+      @include font_color;
+    }
+    & .ceo {
+      margin: auto;
+      width: 688px;
+      @include my_background_white;
+      display: flex;
+      border-radius: 18px;
+      border: 2px solid $color_secondary;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      position: relative;
+      margin-bottom: 30px;
+      & i {
+        font-size: 36px;
+        @include font_color;
+        position: absolute;
+        top: -18px;
+        left: 0;;
+      }
+      & p {
+        line-height: 1.2;
+        @include font_color;
+        font-size: 20px;
+        padding-bottom: 30px;
+      }
+      & .info {
+        display: flex;
+        align-items: center;
+        & .photo-ceo {
+          display: flex;
+          justify-content: space-between;
+          & img {
+            padding-right: 20px;
+          }
+        }
+        & .contact  p {
+          font-size: 18px;
+          padding:0;
+
+          &:first-child {
+            color: $color_secondary;
+          }
+        }
+
+      }
+    }
+    & .btn-social {
+      @include my_display_flex;
+      align-items: center;
+    }
+  }
+}
